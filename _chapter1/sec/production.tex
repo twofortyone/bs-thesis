@@ -1,0 +1,12 @@
+\section{Production scenario}
+\label{ch1:sec:production}
+
+\input{_chapter1/fig/production_blocks}
+
+Figure \ref{ch1:fig:production_blocks} shows that Production scenario behaves similarly to Training but with some exceptions. First, the initial 
+connection is carried out with OpenDSS-G. Second, the Q Values matrix has been already computed, 
+so this scenario aims to apply the Service Restoration plan to lead the network to the best possible 
+state after a fault occurrence through self-healing. Third, RL episode runs only once and performs 
+just the necessary switching operations until it reaches the terminal state, instead of switching 
+operations for all possible faults and switch status combinations. And last, this results in a list 
+of actions performed during the SR plan and an updated Q Values matrix. 

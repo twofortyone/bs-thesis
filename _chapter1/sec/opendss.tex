@@ -1,0 +1,8 @@
+\section{OpenDSS Co-simulation}
+\label{ch1:sec:opendss}
+
+OpenDSS is a fundamental part of the Service Restoration algorithm development. Firstly, it represents the environment in the reinforcement learning model by simulating the entire distribution network. In this way,  it interacts with the agent and performs the switching operations he orders. 
+
+On the other hand, it is the analysis tool that performs power flow calculations in each interaction with the agent. It offers voltage and current profiles, the number of isolated loads, and topology information.
+
+The training scenario uses OpenDSS while production uses OpenDSS-G. The connection with the SR algorithm handles COM interface and TCP/IP, respectively.  

@@ -1,0 +1,34 @@
+\nomenclatureentry{GDG@[{DG}]\begingroup Distributed Generation\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GDNO@[{DNO}]\begingroup Distribution Network Operator\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GEPRI@[{EPRI}]\begingroup Electric Power Research Institute\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GIEEE@[{IEEE}]\begingroup Institute of Electrical and Electronics Engineers\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GSAIDI@[{SAIDI}]\begingroup System Average Interruption Duration Index\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GSAIFI@[{SAIFI}]\begingroup System Average Interruption Frequency Index\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GCAIDI@[{CAIDI}]\begingroup Customer Average Interruption Duration Index\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GSR@[{SR}]\begingroup Service Restoration\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GFISR@[{FISR}]\begingroup Fault Isolation and Service Restoration\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GDAS@[{DAS}]\begingroup Distribution Automation System\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GDNA@[{DNA}]\begingroup Distribution Network Automation\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GNO@[{NO}]\begingroup Normally Open\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GNC@[{NC}]\begingroup Normally Closed\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GML@[{ML}]\begingroup Machine Learning\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GRL@[{RL}]\begingroup Reinforcement Learning\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GMAS@[{MAS}]\begingroup Multiagent Systems\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GCI@[{CI}]\begingroup Customers Interruptions\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GCMI@[{CMI}]\begingroup Customer Minutes of Interruption\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{GDN@[{DN}]\begingroup Distribution Network\nomeqref {0}|nompageref}{xiv}
+\nomenclatureentry{Hn(A)@[{n(A)}]\begingroup The number of actions\nomeqref {0}|nompageref}{xvi}
+\nomenclatureentry{HRR@[{RR}]\begingroup Restoration rate\nomeqref {0}|nompageref}{xvi}
+\nomenclatureentry{H$n(IL)_{pre}$@[{$n(IL)_{pre}$}]\begingroup The number of isolated loads before restoration\nomeqref {0}|nompageref}{xvi}
+\nomenclatureentry{H$n(IL)_{post}$@[{$n(IL)_{post}$}]\begingroup The number of isolated loads after restoration\nomeqref {0}|nompageref}{xvi}
+\nomenclatureentry{GMDP@[{MDP}]\begingroup Markov Decision Process\nomeqref {3.0}|nompageref}{15}
+\nomenclatureentry{H$n(S)$@[{$n(S)$}]\begingroup The number of states \nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H$n(ST)$@[{$n(ST)$}]\begingroup The number of switch status\nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H$n(SW)$@[{$n(SW)$}]\begingroup The number of switches\nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H$n(LN)$@[{$n(LN)$}]\begingroup The number of lines\nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H$s_t$@[{$s_t$}]\begingroup State at time step \textit{t}\nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H$[f, [ss]]$@[{$[f, [ss]]$}]\begingroup State: ordered pair of failure and the state of switches\nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H\textit{f}@[{\textit{f}}]\begingroup Failure\nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H\textit{$[ss]$}@[{\textit{$[ss]$}}]\begingroup The state of switches (ordered list)\nomeqref {3.1}|nompageref}{15}
+\nomenclatureentry{H$a_t$@[{$a_t$}]\begingroup Action taken at time step \textit{t}\nomeqref {3.1}|nompageref}{16}
+\nomenclatureentry{H$\pi$@[{$\pi$}]\begingroup Policy of the Reinforcement Learning algorithm\nomeqref {3.1}|nompageref}{16}

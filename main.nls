@@ -1,0 +1,40 @@
+
+\begin{thenomenclature} 
+\nomgroup{G}
+  \item [{CAIDI}]\begingroup Customer Average Interruption Duration Index\nomeqref {0}\nompageref{xii}
+  \item [{CI}]\begingroup Customers Interruptions\nomeqref {0}\nompageref{xii}
+  \item [{CMI}]\begingroup Customer Minutes of Interruption\nomeqref {0}\nompageref{xii}
+  \item [{DAS}]\begingroup Distribution Automation System\nomeqref {0}\nompageref{xii}
+  \item [{DG}]\begingroup Distributed Generation\nomeqref {0}\nompageref{xii}
+  \item [{DN}]\begingroup Distribution Network\nomeqref {0}\nompageref{xii}
+  \item [{DNA}]\begingroup Distribution Network Automation\nomeqref {0}\nompageref{xii}
+  \item [{DNO}]\begingroup Distribution Network Operator\nomeqref {0}\nompageref{xii}
+  \item [{EPRI}]\begingroup Electric Power Research Institute\nomeqref {0}\nompageref{xii}
+  \item [{FISR}]\begingroup Fault Isolation and Service Restoration\nomeqref {0}\nompageref{xii}
+  \item [{IEEE}]\begingroup Institute of Electrical and Electronics Engineers\nomeqref {0}\nompageref{xii}
+  \item [{MAS}]\begingroup Multiagent Systems\nomeqref {0}\nompageref{xii}
+  \item [{MDP}]\begingroup Markov Decision Process\nomeqref {3.0}\nompageref{15}
+  \item [{ML}]\begingroup Machine Learning\nomeqref {0}\nompageref{xii}
+  \item [{NC}]\begingroup Normally Closed\nomeqref {0}\nompageref{xii}
+  \item [{NO}]\begingroup Normally Open\nomeqref {0}\nompageref{xii}
+  \item [{RL}]\begingroup Reinforcement Learning\nomeqref {0}\nompageref{xii}
+  \item [{SAIDI}]\begingroup System Average Interruption Duration Index\nomeqref {0}\nompageref{xii}
+  \item [{SAIFI}]\begingroup System Average Interruption Frequency Index\nomeqref {0}\nompageref{xii}
+  \item [{SR}]\begingroup Service Restoration\nomeqref {0}\nompageref{xii}
+\nomgroup{H}
+  \item [{$[f, [ss]]$}]\begingroup State: ordered pair of failure and the state of switches\nomeqref {3.1}\nompageref{15}
+  \item [{$\pi$}]\begingroup Policy of the Reinforcement Learning algorithm\nomeqref {3.1}\nompageref{16}
+  \item [{$a_t$}]\begingroup Action taken at time step \textit{t}\nomeqref {3.1}\nompageref{16}
+  \item [{$n(IL)_{post}$}]\begingroup The number of isolated loads after restoration\nomeqref {0}\nompageref{xii}
+  \item [{$n(IL)_{pre}$}]\begingroup The number of isolated loads before restoration\nomeqref {0}\nompageref{xii}
+  \item [{$n(LN)$}]\begingroup The number of lines\nomeqref {3.1}\nompageref{15}
+  \item [{$n(S)$}]\begingroup The number of states \nomeqref {3.1}\nompageref{15}
+  \item [{$n(ST)$}]\begingroup The number of switch status\nomeqref {3.1}\nompageref{15}
+  \item [{$n(SW)$}]\begingroup The number of switches\nomeqref {3.1}\nompageref{15}
+  \item [{$s_t$}]\begingroup State at time step \textit{t}\nomeqref {3.1}\nompageref{15}
+  \item [{\textit{$[ss]$}}]\begingroup The state of switches (ordered list)\nomeqref {3.1}\nompageref{15}
+  \item [{\textit{f}}]\begingroup Failure\nomeqref {3.1}\nompageref{15}
+  \item [{n(A)}]\begingroup The number of actions\nomeqref {0}\nompageref{xii}
+  \item [{RR}]\begingroup Restoration rate\nomeqref {0}\nompageref{xii}
+
+\end{thenomenclature}

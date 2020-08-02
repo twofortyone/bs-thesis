@@ -1,0 +1,21 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces FLISR effects on the number of customers interrupted (CI) and customer minutes of interruption (CMI) by the type of outage from USDON2016 \cite {USDepartmentofEnergy2016}.\relax }}{2}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces FLISR effects on the number of customers interrupted (CI) and customer minutes of interruption (CMI) by the type of FLISR operating scheme from USDON2016 \cite {USDepartmentofEnergy2016}.\relax }}{3}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces RL scenarios\relax }}{14}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces MDP block diagram\relax }}{15}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces MDP block diagram details\relax }}{16}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Reinforcement Learning Episode\relax }}{18}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces SR Algorithm - Training Scenario\relax }}{19}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces SR Algorithm - Production Scenario\relax }}{21}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces IEEE 33 Node Test Feeder from \cite {Landeros2019}\relax }}{24}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces IEEE 123 Node Test Feeder\relax }}{25}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Memory size comparison according to numbers of lines and switches variations for the IEEE 123 Node Test Feeder - 10 switches\relax }}{34}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Memory size according to number of switches }}}{34}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Memory size according to number of lines}}}{34}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces No. of switches vs Time [min] and No. of states - IEEE 123 Node Test Feeder\relax }}{35}% 
+\addvspace {10\p@ }

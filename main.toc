@@ -1,0 +1,43 @@
+\contentsline {chapter}{Abstract}{i}% 
+\contentsline {chapter}{Declaration}{iii}% 
+\contentsline {chapter}{Dedication}{v}% 
+\contentsline {chapter}{Acknowledgments}{vii}% 
+\contentsline {chapter}{Table of contents}{viii}% 
+\contentsline {chapter}{Table of figures}{xi}% 
+\contentsline {chapter}{\nonumberline Nomenclature}{xv}% 
+\contentsline {chapter}{\numberline {1}Introduction}{1}% 
+\contentsline {section}{\numberline {1.1}Background and Motivation}{1}% 
+\contentsline {section}{\numberline {1.2}Problem Statement and Research Objectives}{3}% 
+\contentsline {subsection}{\numberline {1.2.1}General Purpose}{5}% 
+\contentsline {chapter}{\numberline {2}Literature Review}{7}% 
+\contentsline {section}{\numberline {2.1}Overview}{7}% 
+\contentsline {section}{\numberline {2.2}Service Restoration}{7}% 
+\contentsline {subsection}{\numberline {2.2.1}General SR Problem Formulation}{8}% 
+\contentsline {subsection}{\numberline {2.2.2}Control approaches and methodologies}{9}% 
+\contentsline {section}{\numberline {2.3}Reinforcement learning}{10}% 
+\contentsline {subsection}{\numberline {2.3.1}Q-learning}{11}% 
+\contentsline {chapter}{\numberline {3}Service Restoration Algorithm}{13}% 
+\contentsline {section}{\numberline {3.1}Overview}{13}% 
+\contentsline {section}{\numberline {3.2}Reinforcement Learning implementation}{14}% 
+\contentsline {subsection}{\numberline {3.2.1}Markov Decision Process}{15}% 
+\contentsline {subsubsection}{\numberline {3.2.1.1}MDP Elements}{15}% 
+\contentsline {subsubsection}{\numberline {3.2.1.2}MDP Interaction}{16}% 
+\contentsline {subsection}{\numberline {3.2.2}RL episode}{17}% 
+\contentsline {section}{\numberline {3.3}OpenDSS Co-simulation}{17}% 
+\contentsline {section}{\numberline {3.4}Training scenario}{20}% 
+\contentsline {section}{\numberline {3.5}Production scenario}{20}% 
+\contentsline {chapter}{\numberline {4}Service Restoration Algorithm Validation}{23}% 
+\contentsline {section}{\numberline {4.1}Overview}{23}% 
+\contentsline {section}{\numberline {4.2}Test Cases}{23}% 
+\contentsline {subsection}{\numberline {4.2.1}IEEE 33 Node Test Feeder}{24}% 
+\contentsline {subsection}{\numberline {4.2.2}IEEE 123 Node Test Feeder}{24}% 
+\contentsline {chapter}{\numberline {5}Service Restoration Algorithm Results}{27}% 
+\contentsline {section}{\numberline {5.1}RL Training Results}{27}% 
+\contentsline {section}{\numberline {5.2}Service Restoration Plans}{29}% 
+\contentsline {chapter}{\numberline {6}Discussion and Conclusion}{33}% 
+\contentsline {section}{\numberline {6.1}Results Discussions}{33}% 
+\contentsline {subsection}{\numberline {6.1.1}SR Algorithm performance}{34}% 
+\contentsline {section}{\numberline {6.2}Conclusion}{35}% 
+\contentsline {chapter}{References}{37}% 
+\contentsline {chapter}{\numberline {A}Additional Results}{41}% 
+\contentsline {section}{\numberline {A.1}Service Resotoration Plans}{41}% 

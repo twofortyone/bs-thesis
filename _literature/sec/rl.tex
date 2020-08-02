@@ -1,0 +1,36 @@
+\section{Reinforcement learning}
+\label{ch-literature:sec:rl}
+
+Accordingly to the main goal of this work, there is a need to provide the ability of autonomous 
+learning to the Service Restoration algorithm, by which it can find the optimal sequence of 
+switching operations independently of system variations and without human interventions.
+For this reason, Reinforcement Learning plays an important role in  the development of the SR algorithm. 
+
+
+Reinforcement Learning is a machine learning technique between supervised and unsupervised learning. 
+It consists of an interaction between an agent and an environment through which the agent learns to achieve 
+RL goals, previously defined. This interaction is two-way communication: first, the environment sends its 
+current state to the agent; then, the agent chooses an action, based on that state, and returns its decision to the environment. 
+
+Consequently, actions attempt to modify the environment (i.e., an agent selects the action, and the environment executes it) 
+which changes the previous state and leads to a new one.  
+The new state fixes new environment parameters that the environment itself must reward according to 
+learning objectives. Additionally, these parameters allow the agent to identify a terminal state. 
+
+As a result, the agent gets an immediate reward on the last action-state 
+pair and updates its value based on its value function. It is to be noted that the agent's goal is to 
+maximize the reward, and the value function depends on the selected RL algorithm, among which are Dynamic Programming, 
+Monte Carlo, Q-learning, Sarsa, and Dyna Q.
+
+The theory presented in this section is based on the work conducted by Sutton and Barto \cite{Sutton2014}. 
+
+\subsection{Q-learning}
+Q learning is one of the Temporal Difference algorithms. It learns directly from experience and 
+updates its value function after each interaction, due to it combines the best features 
+of both Monte Carlo and Dynamic Programming methods. 
+
+This tabular RL algorithm saves the action-state value estimates in an $m$ by $n$ matrix, where $m$ 
+represents the number of states and $n$ the number of actions, so each position corresponds to an 
+action-state value.  After each interaction, the agent updates the corresponding action-state 
+value by using Equation \ref{ch-literature:equ:q_value} \cite{Sutton2014}. 
+\input{_literature/equ/q-value}

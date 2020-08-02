@@ -1,0 +1,160 @@
+\documentclass[12pt,a4paper,twoside,openright]{ociamthesis}  % default square logo 
+\usepackage[utf8]{inputenc}
+%enhanced support of Computer Modern fonts
+\usepackage{lmodern}
+%additional American Mathematical Society mathematical typesetting capabilities
+\usepackage{amsmath}
+%American Mathematical Society mathematical theorems
+\usepackage{amsthm}
+%American Mathematical Society mathematical symbols
+\usepackage{amssymb}
+% For double line spacing
+\usepackage{setspace}
+% For opening quote
+\usepackage{epigraph}
+% For coloured tables
+\usepackage[table]{xcolor}
+% For rotated table
+\usepackage{rotating}
+% For nomenclature
+\usepackage[intoc]{nomencl}
+% For flowchart
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,automata,positioning,fit,calc,backgrounds,chains, decorations.pathreplacing}
+% For coloring
+\usepackage{color,soul}
+% Inline enumeration
+\usepackage[inline]{enumitem}
+
+% What was additionally imported by MDPI style
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\usepackage{footmisc}
+\usepackage{etoolbox}
+% Fix to allow for \pounds
+\usepackage[T1]{fontenc}
+% Fix to show \texteuro
+\usepackage{textcomp}
+
+%\usepackage[numbers,sort&compress]{natbib}
+\usepackage{cite}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{letltxmacro}
+\AtBeginDocument{
+  \LetLtxMacro\Oldincludegraphics\includegraphics
+%  \renewcommand{\includegraphics}[2][]{\Oldincludegraphics[width=0.9\textwidth,#1]{#2}}
+  \renewcommand{\includegraphics}[2][]{%
+	\ifstrempty{#1}{%
+	  \Oldincludegraphics[width=0.95\textwidth]{#2}%
+	}{%
+	  \Oldincludegraphics[#1]{#2}%
+	}%
+  }
+%  \renewcommand{\includegraphics}\@ifnextchar[{\@specificincludegraphics}{\@defaultincludegraphics}
+%  \cmd\@specificincludegraphics[#1]#2{{\Oldincludegraphics[#1]{#2}}
+%  \cmd\@defaultincludegraphics#1{{\Oldincludegraphics[width=0.9\textwidth]{#1}}
+}
+%\newcommand{\includefig}[1]{\includegraphics[width=0.9\textwidth]{#1}}
+
+\setlength\epigraphrule{0pt}
+\renewcommand{\epigraphflush}{center}
+\setlength{\epigraphwidth}{0.95\textwidth}
+
+% Change default figure positioning
+\makeatletter
+  \providecommand*\setfloatlocations[2]{\@namedef{fps@#1}{#2}}
+\makeatother
+\setfloatlocations{figure}{htbp}
+\setfloatlocations{table}{htbp}
+
+%% This code creates the groups
+% -----------------------------------------
+\renewcommand\nomgroup[1]{%
+	\ifthenelse{\equal{#1}{G}}{\item[\textbf{Acronyms}]}{%
+		\ifthenelse{\equal{#1}{H}}{\item[\textbf{Definition variables and dimensionality}]}{%
+			\ifthenelse{\equal{#1}{I}}{\item[\textbf{Symbols used in Chapter 3}]}{%
+				\ifthenelse{\equal{#1}{J}}{\item[\textbf{Symbols used in Chapter 4}]}{%
+					\ifthenelse{\equal{#1}{K}}{\item[\textbf{Symbols used in Chapter 5}]}{%
+						\ifthenelse{\equal{#1}{L}}{\item[\textbf{Symbols used in Chapter 6}]}{%
+							{}}}}}}}}
+% -----------------------------------------
+
+% Generate the nomenclature (includes glossary)
+\makenomenclature
+
+
+\title{Service Restoration Algorithm in \\[1ex]
+ Distribution Networks by using\\[1ex] Reinforcement Learning}
+%note \\[1ex] is a line break in the title
+
+\author{Pablo Alejandro Parra Gómez}
+\college{Faculty of Engineering}
+
+%\renewcommand{\submittedtext}{change the default text here if needed}
+\degree{Electrical Engineering}
+\degreedate{2020}
+
+
+% end the preamble and start the document
+\begin{document}
+  %\tracingonline1\tracinggroups1
+
+  % this baselineskip gives sufficient line spacing for an examiner to easily
+  % markup the thesis with comments
+  \baselineskip=18pt plus1pt
+
+  % set the number of sectioning levels that get number and appear in the contents
+  \setcounter{secnumdepth}{3}
+  \setcounter{tocdepth}{3}
+
+  \maketitle                  % create a title page from the preamble info
+  \doublespacing
+
+  \begin{romanpages}       % start roman page numbering
+    \include{abstract}          % include the abstract
+    \include{declaration}       % declaration of authenticity
+    \include{dedication}        % include a dedication.tex file
+    \include{acknowledgements}   % include an acknowledgements.tex file
+    \addcontentsline{toc}{chapter}{Table of contents}
+    \tableofcontents            % generate and include a table of contents
+    \addcontentsline{toc}{chapter}{Table of figures}
+    \listoffigures              % generate and include a list of figures
+
+    \include{glossary}
+    \include{nomenclature}
+  \end{romanpages}
+    
+  \include{_introduction/introduction}
+  \include{_literature/literature}
+  \include{_chapter1/chapter1}
+  \include{_chapter2/chapter2}
+  \include{_chapter3/chapter3}
+  \include{_conclusions/conclusions}
+
+  % next line adds the Bibliography to the contents page
+  \addcontentsline{toc}{chapter}{References}
+  % uncomment next line to change bibliography name to references
+  \renewcommand{\bibname}{References}
+  \bibliography{references}
+  \bibliographystyle{ieeetr}  %use the plain bibliography style
+
+
+  % now enable appendix numbering format and include any appendices
+  \appendix
+  \include{_appendices/appendix}
+
+  %% Los comandos para correr obtener el archivo son:
+  % pdflatex main.tex
+  % makeindex main.nlo -s nomencl.ist -o main.nls
+  % pdflatex main.tex
+
+
+\end{document}

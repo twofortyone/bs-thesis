@@ -1,0 +1,14 @@
+\section{Service Restoration Plans}
+
+The Service Restoration Plan specifies the optimal switching operations to restore the maximum number of loads
+maintaining the operational and topological constraints after a fault occurs. 
+The execution of this plan is carried out in the Production scenario, that is, once the system is already trained.
+
+Tables \ref{ch2:tab:33_actions} and \ref{ch2:tab:123_actions} present the restoration plans for IEEE 33 Node Test Feeder with 5 switches 
+and IEEE 123 Node Test Feeder with 10 switches, respectively. Additionally, they contain the number of actions required $n(A)$, 
+the processing time (T[s]), the number of isolated loads before $n(IL)_{pre}$ and after $n(IL)_{post}$  restoration, and the restoration rate ($RR$).
+The latter is calculated as follows: $ RR = \frac{n(IL)_{prev}-n(IL)_{post}}{n(IL)_{prev}}$.
+
+The Service Restoration Plans for the other switch configurations of the test cases are presented in Appendix \ref{appx-a:additional-results}.
+\input{_chapter3/tab/33_actions}
+\input{_chapter3/tab/123_actions}

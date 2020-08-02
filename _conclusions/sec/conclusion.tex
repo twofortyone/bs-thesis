@@ -1,0 +1,17 @@
+\section{Conclusion}
+\label{ch-conclusions:sec:conclusion}
+
+
+This thesis aimed to present the development of a Service Restoration Algorithm implementing Reinforcement Learning techniques.
+
+The reviewed literature in Chapter 2 emphasized the need for improving Service Restoration methodologies by developing new approaches that endow Distribution Networks with a self-healing capacity to resupply automatically and intelligently out-of-service un-faulted customers after a fault occurrence.  
+
+Chapter 3 explains the Reinforcement Learning technique implemented throughout modeling a Markov Decision Process that captures the Distribution Network parameters, the multiobjective optimization function, and the operational and topological constraints. Furthermore, it states the roles of the co-simulation engine and how it is integrated into the algorithm. As a result, Chapter 3 proposes an algorithm structure that divides the Service Restoration algorithm into Training and Production scenarios, both implementing an RL technique and a co-simulation engine.  
+
+Lastly, Chapter 4 defines the SR algorithm validation including test cases and results. The test cases compromise both IEEE 33 bus test feeder and IEEE 123 bus test feeder. In this way, the Service Restoration algorithm was tested for each of the test cases, thus obtaining a restoration plan for a fault under each of its lines. 
+
+The service restoration plan obtained for the IEEE 33 Node Test Feeder and the IEEE 123 Node Test Feeder successfully resupply $100\%$ of the out-of-service un-faulted customers, as described by the restoration rate presented in Tables \ref{ch2:tab:33_actions} and \ref{ch2:tab:123_actions}.
+
+%The SR algorithm built upon the outlined limitations in the literature 
+
+In conclusion, this SR algorithm proposed is capable of self-learning to obtain an optimal solution that fulfills operational and topological constraints. Furthermore, it establishes a new approach in service restoration methodologies by implementing a Reinforcement Learning technique.

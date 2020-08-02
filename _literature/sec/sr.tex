@@ -1,0 +1,162 @@
+\section{Service Restoration}
+\label{ch-literature:sec:sr}
+Service Restoration can be performed by centralized and decentralized approaches \cite{Zidan2017}\cite{Yip2017}.
+The first one includes expert systems, heuristics, metaheuristics, and mathematical programming methodologies; 
+the second relies on Multiagent Systems (MAS) \cite{Chellaswamy2019}. 
+
+The two types of approaches, and their corresponding methodologies, are reviewed in section \ref{ch-literature:sec-sr:approaches}. 
+However, both approaches tend to solve the Service Restoration problem that can be 
+formalized as a general optimization problem, as suggested in section \ref{ch-literature:sec-sr:problem_formulation}. 
+
+
+\subsection{General SR Problem Formulation}
+\label{ch-literature:sec-sr:problem_formulation}
+Service Restoration can be formalized as an optimization problem \cite{Huang2016}. 
+
+The main objective function aims to maximize the number of loads restored (equation 
+\ref{ch-introduction:equ:max_loads}), while the second aims to minimize the number of operations performed 
+to resupply the aforementioned loads (equation \ref{ch-introduction:equ:min_ops}) \cite{Shen2018}. 
+
+\input{_introduction/equ/maxloads}
+where $L_i$ is the load at bus \textit{i}, and $k_i$ is its status (1: restored; 0: not restored).
+\input{_introduction/equ/minops}
+where $n_{ops}$ is the number of switching operations. 
+
+\subsubsection*{Constraints}
+The presented objective functions are subject to operational and topological constraints \cite{Abu-Elanien2018}. 
+
+\begin{enumerate}
+    \item \textbf{Radial topology:} Radial network topology should be preserved.
+    \item \textbf{Bus voltage limits:} Nodal voltage $V_i$ should be within the minimum $V_{min}$ and maximum $V_{max}$ voltage limit: $V_{min} \leq V_i \leq V_{max}$ 
+    \item \textbf{Line current limits:} Line current $I_i$ should be under the maximum acceptable line current $ I_{max}$: $I_i \leq I_{max}$.
+\end{enumerate}
+
+\subsection{Control approaches and methodologies}
+\label{ch-literature:sec-sr:approaches}
+\subsubsection*{Centralized approach}
+The centralized approach is the principal control approach used in Service Restoration \cite{Abu-Elanien2018}. 
+It captures and processes measurements and status information of the entire distribution network to obtain 
+an optimal 
+SR solution \cite{Koch-Ciobotaru2014}, because of that it requires an extensive computational capacity and a low latency system 
+communication \cite{Zidan2017} \cite{Shen2018}. 
+Nonetheless, the communication system can be a single point of failure \cite{Shen2018}. 
+
+Among its methodologies are expert system, heuristics, metaheuristic, and mathematical programming 
+\cite{Chellaswamy2019}. 
+
+
+
+\begin{enumerate}
+    \item \textbf{Expert system:} creates rules relying on expert knowledge \cite{Shen2018}. 
+    It is a successful way to SR, however, its solution depends on the system and does not guarantee 
+    optimality. Besides, its maintenance is expensive for large networks \cite{Zidan2017} \cite{Shen2018}. 
+    \item \textbf{Heuristics:} partition and approximate the SR problem by 
+    using expert knowledge to obtain a feasible solution. Heuristics present an improvement in time 
+    processing, but a difficulty to obtain an optimal solution \cite{Abu-Elanien2018}\cite{Shen2018}. 
+    \item \textbf{Mathematical programming:} is a direct method to address the SR optimization problem 
+    by obtaining an optimal solution. Although, it demands substantial processing time for large networks
+    \cite{Abu-Elanien2018}. 
+    \item \textbf{Metaheuristics:} solves the SR problem as an optimization problem, as well as Mathematical Programming (MP),  
+    but with less processing time than MP and with a better solution than Heuristics \cite{Abu-Elanien2018}. 
+    This is performed by simplifying a problem with many objectives into a problem with a single equivalent objective \cite{Shen2018}. 
+     However, the processing time is still huge for practical networks \cite{Zidan2017}. 
+\end{enumerate}
+
+\subsubsection*{Decentralized approach}
+Decentralized approach distributes the intelligence across the distribution network \cite{Shen2018}, as opposed 
+to unique control intelligence in the centralized approach. This structure requires a more robust 
+and reliable communication system, but it overcomes the centralized approach disadvantages of huge 
+computational capacity and one single point of failure \cite{Zidan2017} \cite{Abu-Elanien2018}. However, since in this approach, the 
+agent does not know all the distribution network but its neighbor network, the solution 
+obtained is suboptimal \cite{Koch-Ciobotaru2014}. 
+This approach is implemented through Multiagent Systems (MAS). 
+
+
+Figure \ref{ch-literature:tab:control_appraches} summarizes the strengths and limitations of each of the approaches discussed above.
+\input{_literature/tab/tab_approaches}
+%\begin{enumerate}
+%    \item \textbf{Multiagent systems:}
+%\end{enumerate}
+
+%centralized
+
+%computes the global optimal
+%reconfiguration of the grid, considering all the constraints and using measurements 
+%and status information for all across the grid.
+%\cite{Koch-Ciobotaru2014}
+
+%requires knowledge of the entire structure of the system
+%\cite{Koch-Ciobotaru2014}
+
+%the main control approach for reconfiguration problem
+%Most of the existing studies adopted a centralized control approach
+%\cite{Abu-Elanien2018}
+
+
+%low latency communication system to 
+%requires/transfer large/huge amounts of data among field agents and control centers (low latency)
+%\cite{Zidan2017} \cite{Chellaswamy2019} \cite{Shen2018}
+
+%thus requiring enormous/expensive computational capacity
+%\cite{Chellaswamy2019} \cite{Shen2018}
+
+%centralized methods suffer from a single point failure risk
+%\cite{Zidan2017} \cite{Shen2018}
+
+%Heuristic, metaheuristic, expert system, and mathematical solutions
+%\cite{Chellaswamy2019}
+
+% -------------------------
+%expert systems 
+%transfers the expert knowledge into some rules
+
+%the maintenance of a large-scale ES is very costly and the optimality of the solution cannot be guaranteed
+%\cite{Shen2018}
+
+%The expert system approach is considered a successful way to solve SR problems; however, maintenance of large-scale expert systems has turned out to be costly. Moreover, expert system rules are system-specific, and changed with system variations
+%\cite{Zidan2017}
+
+%heuristics
+%While heuristic algorithms can obtain a feasible solution
+%quickly, they still require specialists’ knowledge and it is hard to derive an optimal solution.
+%\cite{Shen2018}
+
+%approaches require extensive computational time when applied for practical distribution systems
+%\cite{Zidan2017}
+
+%The meta-heuristic algorithms take less time than mathe-
+%matical programming to solve the problem especially in large systems. However, the computational 
+%time still considerable in case of large systems. Moreover, the data structure may affect the
+%computational time of the meta-heuristic algo- rithms. Poorly prepared data structure can increase 
+%the com- putational time dramatically. Although the solution of meta-heuristic algorithms is near 
+%optimal solution but it is not optimal. Generally, the solution is better than the heuristic solution 
+%and is acceptable by many operation engineers.
+%\cite{Abu-Elanien2018}
+
+%Meta- heuristic solve the problem based on the mathematical optimization model
+%In conventional meta-heuristic algorithms , a multi- objective problem is converted into an
+%equivalent single objective problem by weighting factors, and the admissible switching sequence 
+%is not given
+%\cite{Shen2018}
+
+%\textbf{Descentralized}
+
+%Decentralized approaches are based on direct peer-to-peer communication between monitoring devices
+%\cite{Zidan2017}
+
+%the multi- agent system (MAS) is developed to distribute the intelligence and control actions
+% to the component level
+%\cite{Shen2018}
+
+%decentralized approach has the advantage of computation speed as it computes a local optimal s
+%olution for the grid reconfiguration
+%\cite{Koch-Ciobotaru2014}
+
+%Multi-agent systems are systems with multiple interacting elements (agents). Agents are computer 
+%systems that are cap- able of deciding what to do in order to satisfy the assigned job to them, 
+%and they are also capable of interacting with other agents to perform the overall system goals .
+
+%the necessity of effi- cient and reliable communication system may limit the application 
+%of decentralized approaches on full size distribu- tion systems
+%suboptimal plan, and this is one of the drawbacks of the decentralized approaches
+%\cite{Abu-Elanien2018}

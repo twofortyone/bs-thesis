@@ -1,0 +1,58 @@
+\section{Problem Statement and Research Objectives}
+\label{ch-introduction:sec:problem}
+
+Service Restoration uses network reconfiguration methods to change the DN topology and resupply the out-of-service 
+un-faulted customers \cite{Gholami2015}\cite{Shen2018}. This reconfiguration is carried out through 
+switching operations, considering typical DNs have normally closed (NC) sectionalizing switches and normally 
+opened (NO) tie switches \cite{Zidan2017} \cite{Sanches2014}. I.e., the main goal of SR is to find 
+optimal switching sequences for the DN \cite{Latare2017}.
+
+This procedure must maximize the number of loads restored, minimize the number of switching operations, and 
+maintain operational and topological constraints \cite{Abu-Elanien2018} \cite{Gholami2015}. 
+Nevertheless, and as noted in the formulation problem (Section \ref{ch-literature:sec:overview}), SR is computationally demanding because it is multi-objective, 
+non-linear, and operational constrained. And also, it requires to explore a large number of switching operation 
+combinations \cite{Shen2018} \cite{Sanches2014}. 
+
+SR algorithm uses one or many techniques to obtain a solution, among which are expert systems, heuristic 
+algorithms, meta-heuristic algorithms, graph theory, multi-agent systems, and mathematical programming \cite{Shen2018}. 
+Furthermore, they can be implemented under centralized or decentralized approaches \cite{Zidan2017}. The control approaches 
+and their corresponding techniques are reviewed, in further detail, in section \ref{ch-literature:sec:overview} and 
+summarized in table \ref{ch-introduction:tab:sr_techniques}. 
+
+\input{_introduction/tab/techniques}
+
+Table \ref{ch-introduction:tab:sr_techniques} compares the different methodologies used to develop SR 
+algorithms and shows their limitations. Most methodologies cannot obtain an optimal solution, 
+but improvements in processing time \cite{Abu-Elanien2018}; thus, the solution optimality is sacrificed to obtain a faster solution. 
+On the other hand, these methodologies, except mathematical programming, are system dependent and do not 
+have the ability to self-learn, becoming out of date when system variations occur \cite{Zidan2017}.
+
+Therefore, these limitations imply a need for human intervention to update their rules or knowledge bases 
+and make the methodologies readapt to the new changes.
+
+\subsection{General Purpose}
+
+According to the previous data, the focus of this work is to develop a scalable Service Restoration algorithm 
+capable of self-healing Distribution Networks by automatic learning the optimal sequence of switching 
+operations to lead DNs to the best possible state after a fault occurs. Moreover, 
+the challenge of automatic learning behavior also includes continuous learning, hence the system is 
+constantly exploring to improve the sequence and adapt to changes in the network. Last but not least, 
+the optimization objectives and constraints formalized in Chapter \ref{ch-literature} are also taken into account.
+
+This work also aims to develop a validation system of the SR algorithm, which allows simulations of a 
+practical distribution network and verification of its operational and topological constraints, 
+through the integration of a co-simulation engine. 
+
+\begin{enumerate}[
+    labelindent=*,
+    style=multiline,
+    leftmargin=*,
+    label=\textbf{Objective~\arabic*}]
+        %\item Review existing methods for Service Restoration. 
+        %\item Design a solution that improve the existing methods. 
+        \item Develop a Service Restoration algorithm for Distribution Networks capable of self-learning to obtain an optimal solution that accomplishes operational and topological constraints by implementing a Reinforcement Learning technique.
+        \item Develop a validation system that emulates and measures the parameters of a Distribution Network, in order to test the proposed SR algorithm performance, by integrating a co-simulation engine.
+        %\item Develop a validation system by using co-simulation engine. 
+\end{enumerate}
+    
+
